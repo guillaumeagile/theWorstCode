@@ -38,12 +38,16 @@ Of course, as you don't do unit test , you go in production and that error pops.
 What will happen?
 In the most probable scenario, you (or the user) were just asking to retreive a single value.
 And it gets this `Sequence contains no elements` ... Quite puzzling, you didn't expect a sequence, just a value.
+
 Your brain is asking: wtf?
+
 You will have to open a log (takes time and heavy brain load), find out the message among others, as this message is very common in Linq.
 When you'll find the correct one, you have to analyse the why. 
+
 But the stack trace won"t give you more explanation, nor the Uid that you were looking for, and maybe you'll have to figure out that the problem is malformed Uid, who knows.
 Or a real lack of data in the base.
- Your brain will have to do extra efforts to
+
+ Your brain will have to do extra efforts to sort it all out.
 
  ## How to solve it, first step
 
